@@ -1,0 +1,9 @@
+# Core library has zero hard dependencies (pure-Python stdlib).
+# These are for analysis, plotting, and testing as the project grows.
+
+numpy>=1.26
+pytest>=8.0
+
+# Optional, uncomment when you start charting distributions:
+# matplotlib>=3.8
+# pandas>=2.2
