@@ -1,0 +1,2 @@
+# Viewer-only dependency. The prediction engine itself needs no Streamlit.
+streamlit>=1.33
