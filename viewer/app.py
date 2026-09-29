@@ -9,7 +9,13 @@ and test suite use, so the numbers here always match.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
 import streamlit as st
+
+# Make src/ importable when the package isn't pip-installed (Streamlit Cloud).
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from prediction_models.games import liars_dice as ld
 
